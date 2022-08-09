@@ -81,3 +81,22 @@ sudo mv composer.phar /usr/local/bin/composer
 sudo ln -s /usr/local/bin/composer /usr/bin/composer
 
 composer -v
+
+
+
+sudo apt install openjdk-8-jdk
+OR
+sudo apt install default-jre
+
+java -version
+O/P: 
+openjdk version "11.0.14" 2022-01-18
+OpenJDK Runtime Environment (build 11.0.14+9-Ubuntu-0ubuntu2.20.04)
+OpenJDK 64-Bit Server VM (build 11.0.14+9-Ubuntu-0ubuntu2.20.04, mixed mode, sharing)
+
+
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu focal universe"
+
+sudo apt-get update
+
+sudo apt install netbeans
