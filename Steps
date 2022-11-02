@@ -33,6 +33,15 @@ sudo apt install mysql-server
 # Install PHPMyAdmin
 sudo apt-get install phpmyadmin
 
+sudo mysql -u root
+
+mysql> USE mysql;
+mysql> UPDATE user SET plugin='mysql_native_password' WHERE User='root';
+mysql> FLUSH PRIVILEGES;
+mysql> exit;
+
+sudo service mysql restart
+
 #Open apache2.conf file and include phpmyadmin
 sudo gedit /etc/apache2/apache2.conf
 
