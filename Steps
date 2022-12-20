@@ -48,6 +48,11 @@ sudo gedit /etc/apache2/apache2.conf
 #Add the following to the bottom of the file:
 Include /etc/phpmyadmin/apache.conf
 
+#Open phpmyadmin config file 
+sudo gedit /etc/phpmyadmin/config.inc.php
+
+Uncomment 2 lines where "AllowNoPassword" is written
+
 #restart apache server
 sudo service apache2 restart
 
